@@ -2,3 +2,4 @@ _site
 .tags
 .tags_sorted_by_file
 jekyll.pid
+*.gems
