@@ -21,7 +21,7 @@
     </head>
     <body>
 
-        <div class="site">
+        <div class="container site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}<br /><i>{{ site.description }}</i></a></h1>
             <a class="extra" href="/">Accueil</a>
@@ -29,15 +29,9 @@
             <a class="extra" href="/apropos">À propos</a>
           </div>
 
-          <!-- <nav class="navigation">
-            <ul>
-              <li><a href="/">Accueil</a></li>
-            </ul>
-          </nav> -->
-
           {{ content }}
 
-          <div class="footer row">
+          <div class="row footer">
             <div class="contact col-md-4">
               <p>
                 {% if site.author %} {{ site.author }}<br />{% endif %}
@@ -45,10 +39,10 @@
                 {% if site.email %} {{ site.email }} {% endif %}
               </p>
             </div>
-            <div class="copyright col-md-4">
+            <div class="col-md-4 copyright">
               All rights reserved | 2013
             </div>
-            <div class="social col-md-4">
+            <div class="col-md-4 social">
               <p>
                 <a href="https://github.com/{{ site.gitname }}">github.com/{{ site.gitname }}</a><br />
               </p>
