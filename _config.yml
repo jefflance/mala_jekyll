@@ -18,3 +18,5 @@ gallerytag:
     thumb_width: 150
     thumb_height: 150
     columns: 4
+
+lessc: /opt/local/bin/lessc --strict-imports
