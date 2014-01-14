@@ -6,22 +6,22 @@
         <title>{{ page.title }} {% if page.title %} | {% endif %} {{ site.name }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
         <!-- tools -->
         <!-- Bootstrap -->
         <link rel="stylesheet" href="tools/bootstrap/css/bootstrap.min.css">
         <!-- Font-Awesome -->
         <link rel="stylesheet" href="tools/font-awesome/css/font-awesome.min.css">
 
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
     </head>
     <body>
 
-        <div class="site">
+        <div class="container site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}<br /><i>{{ site.description }}</i></a></h1>
             <a class="extra" href="/">Accueil</a>
@@ -29,31 +29,30 @@
             <a class="extra" href="/apropos">À propos</a>
           </div>
 
-          <!-- <nav class="navigation">
-            <ul>
-              <li><a href="/">Accueil</a></li>
-            </ul>
-          </nav> -->
-
           {{ content }}
 
-          <div class="footer">
-            <div class="contact">
+          <div class="row footer">
+            <div class="contact col-md-4">
               <p>
                 {% if site.author %} {{ site.author }}<br />{% endif %}
                 {% if site.job %} {{ site.job }}<br />{% endif %}
                 {% if site.email %} {{ site.email }} {% endif %}
               </p>
             </div>
-            <div class="contact">
+            <div class="col-md-4 copyright">
+              All rights reserved | 2013
+            </div>
+            <div class="col-md-4 social">
               <p>
                 <a href="https://github.com/{{ site.gitname }}">github.com/{{ site.gitname }}</a><br />
               </p>
             </div>
-            <div class="copyright">
-              All rights reserved | 2013
-            </div>
+            
+
+            <script src="http://code.jquery.com/jquery.js"></script>
+            <script src="tools/bootstrap/js/bootstrap.min.js"></script>
           </div>
+
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

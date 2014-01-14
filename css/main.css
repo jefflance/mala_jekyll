@@ -99,26 +99,32 @@ a:visited { color: #a0a; }
   color: #666;
   border-top: 4px solid #eee;
   margin-top: 2em;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .footer .contact {
-  float: left;
-  margin-right: 3em;
 }
 
 .footer .contact a {
   color: #8085C1;
 }
 
+.footer .copyright {
+
+}
+
 .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
 }
 
 .footer .rss img {
   border: 0;
+}
+
+.footer .social {
+}
+
+.footer .social a {
+  color: #8085C1;
 }
 
 /*****************************************************************************/
