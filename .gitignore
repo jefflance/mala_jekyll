@@ -1,7 +1,7 @@
-_site
-.tags
-.tags_sorted_by_file
+ruby
 jekyll.pid
 *.gems
 .rvmrc
-gems
+_site
+.tags
+.tags_sorted_by_file

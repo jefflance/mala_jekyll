@@ -1,6 +1,6 @@
 ### jekyll
 # global
-exclude: ['gems', 'jekyll.pid']
+exclude: ['ruby', 'jekyll.pid']
 timezone: Europe/Paris
 encoding: UTF-8 
 safe: true
