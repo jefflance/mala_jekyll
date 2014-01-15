@@ -1,3 +1,12 @@
+### jekyll
+# global
+exclude: ['gems', 'jekyll.pid']
+timezone: Europe/Paris
+encoding: UTF-8 
+safe: true
+gems: []
+
+### site
 # general
 name: MaLa
 description: Carnets et notes
@@ -5,13 +14,14 @@ author: Jeff LANCE
 email: jeff.lance@mala.fr
 gitname: jefflance
 
-markdown: redcarpet
-pygments: true
-encoding: UTF-8
 relative_permalinks: true
 permalink: date
 
 # plugins
+markdown: redcarpet
+pygments: true
+
+
 #gallerytag:
 #    dir: images/galleries
 #    url: /images/galleries
