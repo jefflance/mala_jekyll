@@ -1,9 +1,8 @@
 ### jekyll
 # global
-exclude: ['ruby', 'jekyll.pid']
+exclude: ['ruby', '*.pid']
 timezone: Europe/Paris
-encoding: UTF-8 
-safe: true
+encoding: UTF-8
 gems: []
 
 ### site
@@ -20,7 +19,7 @@ permalink: date
 # plugins
 markdown: redcarpet
 pygments: true
-
+lessc: /opt/local/bin/lessc
 
 #gallerytag:
 #    dir: images/galleries
