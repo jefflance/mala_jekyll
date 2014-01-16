@@ -16,44 +16,57 @@
         <link rel="stylesheet" href="/styles/syntax.css">
 
         <!-- Custom CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/styles/mala.css">
-
     </head>
     <body>
 
-        <div class="container site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}<br /><i>{{ site.description }}</i></a></h1>
-            <a class="extra" href="/">Accueil</a>
-            <a class="extra" href="/portfolio/">Portfolio</a>
-            <a class="extra" href="/apropos">À propos</a>
-          </div>
-
-          <section class="content">
-            {{ content }}
-          </section>
-
-          <div class="row footer">
-            <div class="col-md-4 contact">
-              <p>
-                {% if site.author %} {{ site.author }}<br />{% endif %}
-                {% if site.job %} {{ site.job }}<br />{% endif %}
-                {% if site.email %} {{ site.email }} {% endif %}
-              </p>
-            </div>
-            <div class="col-md-4 copyright">
-              All rights reserved | 2013
-            </div>
-            <div class="col-md-4 social">
-              <p>
-                <a href="https://github.com/{{ site.gitname }}">github.com/{{ site.gitname }}</a><br />
-              </p>
+        <div id="#wrap">
+            <div class="container">
             </div>
 
-          </div>
+            <!-- Content -->
+            <div class="container site">
+                <div class="page-header">
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                        <h1 class="title"><a href="/">{{ site.name }}<br /><small><i>{{ site.description }}</i></small></a></h1>
+                        <ul class="nav navbar-nav">
+                            <li><a class="extra" href="/">Accueil</a></li>
+                            <li><a class="extra" href="/portfolio/">Portfolio</a></li>
+                            <li><a class="extra" href="/apropos">À propos</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
+                <section class="content">
+                    {{ content }}
+                </section>
+            </div>
         </div>
 
+        <div id="footer" class="container">
+            <div class="row">
+                <div class="col-md-4 contact">
+                    <p>
+                        {% if site.author %} {{ site.author }}<br />{% endif %}
+                        {% if site.job %} {{ site.job }}<br />{% endif %}
+                        {% if site.email %} {{ site.email }} {% endif %}
+                    </p>
+                </div>
+                <div class="col-md-4 copyright">
+                    All rights reserved | 2013
+                </div>
+                <div class="col-md-4 social">
+                    <p>
+                        <a href="https://github.com/{{ site.gitname }}">github.com/{{ site.gitname }}</a><br />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Scripts -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://code.jquery.com/jquery.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
