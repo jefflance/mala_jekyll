@@ -5,3 +5,5 @@ jekyll.pid
 _site
 .tags
 .tags_sorted_by_file
+*.markdown
+!2013-12-27-welcome-to-jekyll.markdown
