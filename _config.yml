@@ -1,6 +1,6 @@
 ### jekyll
 # global
-exclude: ['ruby', '*.pid']
+exclude: ['ruby', 'config.rb']
 timezone: Europe/Paris
 encoding: UTF-8
 gems: []
@@ -14,7 +14,7 @@ email: jeff.lance@mala.fr
 gitname: jefflance
 
 relative_permalinks: true
-permalink: date
+permalink: /blog/:year/:month/:day/:title.html
 
 # plugins
 markdown: redcarpet

@@ -24,11 +24,12 @@ module Jekyll
         next if not sf.path =~ less_ext
         
         less_path = sf.path
+        #css_path = less_path.gsub(less_ext, '.css').gsub(src_root, dest_root)
         css_path = less_path.gsub(less_ext, '.css').gsub(src_root, dest_root)
         css_dir = File.dirname(css_path)
         css_dir_relative = css_dir.gsub(dest_root, '')
         css_name = File.basename(css_path)
-        
+
         FileUtils.mkdir_p(css_dir)
 
         begin
