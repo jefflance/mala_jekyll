@@ -3,7 +3,7 @@
 exclude: ['ruby', 'config.rb']
 timezone: Europe/Paris
 encoding: UTF-8
-gems: []
+gems: [jekyll-less]
 
 ### site
 # general
@@ -19,7 +19,7 @@ permalink: /blog/:year/:month/:day/:title.html
 # plugins
 markdown: redcarpet
 pygments: true
-lessc: /opt/local/bin/lessc
+#lessc: /opt/local/bin/lessc	# deprecated since i use 'jekyll-less' gem
 
 #gallerytag:
 #    dir: images/galleries
