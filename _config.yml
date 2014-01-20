@@ -4,6 +4,7 @@ exclude: ['ruby', 'config.rb']
 timezone: Europe/Paris
 encoding: UTF-8
 gems: [jekyll-less]
+destination: /Volumes/Datas/prj/web/localhost/htdocs/mala_jekyll
 
 ### site
 # general
